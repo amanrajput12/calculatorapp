@@ -3,29 +3,36 @@
     margin: 0;
 }
 section{
-    background-color: rgb(32, 38, 42);
+    background-color: rgb(204, 220, 230);
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .container{
     width: 50vh;
-    height: 70vh;
+    height: 75vh;
     background-color: rgb(40, 46, 46);
-    border-radius: 8px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
     
 }
 .display{
-    background-color: rgb(182, 182, 182);
+    background-color:#ffff;
     height: 10vh;
     width: 100%;
     text-align: right;
     font-size: 30px;
     position: relative;
     overflow: hidden ;
+    border-radius:5px ;
     
 }
 .temp-result{
@@ -37,18 +44,23 @@ section{
 .all_buttons{
     color: #ffff;
     display: grid;
+    margin-left: 10px;
+    margin-top: 10px;
    
     grid-template: repeat(4,1fr)/repeat(4,1fr);
+    
 }
 .button{
     border: 0.2px solid rgb(92, 92, 92);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 11.8vh;
-    width: 100%;
+    height: 11vh;
+    width: 80%;
     cursor: pointer;
-    font-size: 40px ;
+    font-size: 20px ;
+    border-radius: 20px;
+    margin-top: 7px;
 }
 .button:hover{
     background-color: rgb(30,43,46);
